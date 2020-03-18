@@ -1,0 +1,58 @@
+.display-all
+{
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+}
+.manage
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+button
+{
+    margin: 0 5px;
+}
+.modal-content
+{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+}
+.modal-header
+{
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.45);
+}
+.modal-title
+{
+    font-size: 25px;
+}
+.close
+{
+    color: red;
+}
+.field-label
+{
+    font-size: 14px;
+}
+.field-text
+{
+    font-size: 14px;
+    border-radius: 20px;
+    background: transparent;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+.ng-invalid:not(form)
+{
+    border: 1px solid rgba(255, 0, 0, 0.5);
+}
+.ng-valid:not(form)
+{
+    border: 1px solid rgba(13, 185, 13, 0.6);
+}

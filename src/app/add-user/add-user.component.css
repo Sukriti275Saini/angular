@@ -1,0 +1,68 @@
+.container
+{
+    margin-top: 50px;
+}
+.main-div
+{   
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+    width: 70%;
+    margin: auto;
+}
+.heading
+{
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.heading h2
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px rgba(159, 27, 212, 0.7);
+}
+.field-label
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+.field-text
+{
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.ng-invalid:not(form)
+{
+    border: 2px solid rgba(255, 0, 0, 0.5);
+}
+.ng-valid:not(form)
+{
+    border: 2px solid rgba(13, 185, 13, 0.6);
+}
+button
+{
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px black;
+    font-weight: bold;
+    border-radius: 8px;
+    background: rgba(13, 185, 13, 0.6);
+    color: black;
+    padding: 8px 30px;
+}
+button:hover
+{
+    box-shadow: none;
+    color: black;
+}
+button:disabled
+{
+    background: rgba(255, 0, 0, 0.8);
+}

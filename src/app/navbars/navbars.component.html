@@ -1,0 +1,35 @@
+<header class="container-fluid all-navs">
+    <div class="container">
+        <div class="h-navbar">
+            <h1>Users Record</h1>
+            <ul class="ml-auto">
+                <li [routerLink]="['/']">
+                    <i class="fas fa-home"></i>
+                </li>
+
+                <li [routerLink]="['adduser']">
+                    <i class="fas fa-user-plus"></i>
+                </li>
+
+                <li>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell notify-icon"></i>
+                            <span class="badge badge-pill badge-danger notify" *ngIf="count">{{count}}</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" *ngFor='let msg of msgs ; index as id' (click)="onClick(id)">
+                                {{msg}}
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class=" row choose-lang">
+            <h5>Choose Language:</h5>
+            <h6>English</h6>
+            <h6>Hindi</h6>
+        </div>
+    </div>
+</header>

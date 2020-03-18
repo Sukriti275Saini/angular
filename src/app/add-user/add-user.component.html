@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="main-div">
+        <div class="heading">
+            <h2>Add a New User:</h2>
+        </div>
+        <div class="form-div">
+            <form class="row" [formGroup]="addingUser" (ngSubmit)="onSubmit(addingUser.value)">
+                <div class="col-3">
+                    <label class="field-label">User-Id :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="number" placeholder="Enter your Id" formControlName="id" autocomplete="off" required>
+                </div>
+
+                <div class="col-3">
+                    <label class="field-label">First Name :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="text" placeholder="Enter first name" formControlName="fname" autocomplete="off" required>
+                </div>
+
+                <div class="col-3">
+                    <label class="field-label">Last Name :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="text" placeholder="Enter last name" formControlName="lname" autocomplete="off" required>
+                </div>
+
+                <div class="col-3">
+                    <label class="field-label">Date of Birth :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="date" placeholder="Enter your dob" formControlName="dob" autocomplete="off" required>
+                </div>
+
+                <div class="col-3">
+                    <label class="field-label">E-mail :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="email" placeholder="Enter your E-mail" formControlName="email" autocomplete="off" required>
+                </div>
+
+                <div class="col-3">
+                    <label class="field-label">Mobile No. :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="number" placeholder="Enter Mobile No." formControlName="mobileno" autocomplete="off" required>
+                </div>
+
+                <div class="col-3">
+                    <label class="field-label">Designation :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="text" placeholder="Enter your designation" formControlName="designation" autocomplete="off"
+                        required>
+                </div>
+
+                <div class="col-3">
+                    <label class="field-label">Address :</label>
+                </div>
+                <div class="col-9">
+                    <input class="field-text" type="text" placeholder="Enter your Address" formControlName="address" autocomplete="off" required>
+                </div>
+
+                <button class="btn submit-btn mx-auto" [disabled]="!addingUser.valid">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>

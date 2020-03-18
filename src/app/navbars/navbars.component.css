@@ -1,0 +1,85 @@
+.all-navs
+{
+    position: relative;
+    background: rgba(159, 27, 212, 0.7);
+    padding: 0;
+}
+.h-navbar
+{
+    padding-top: 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+}
+.h-navbar h1
+{
+    color: white;
+    outline: none;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.h-navbar h1:hover
+{
+    cursor: pointer;
+}
+.h-navbar ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+.h-navbar ul li
+{
+    color: white;
+    outline: none;
+    font-size: 40px;
+    padding: 0 0 0 20px;
+}
+.h-navbar ul li:hover
+{
+    cursor: pointer;
+}
+.notify
+{
+    font-size: 20px;
+    vertical-align: top;
+}
+.dropdown button
+{
+    color: white;
+    outline: none;
+    font-size: 40px;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+}
+.dropdown-item:hover
+{
+    background: transparent;
+}
+.choose-lang
+{
+    align-items: baseline;
+    justify-content: flex-end;
+    color: white;
+}
+.choose-lang h5
+{
+    font-family: cursive;
+}
+.choose-lang h6
+{
+    padding: 0 15px;
+}
+.choose-lang h6:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
